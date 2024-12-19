@@ -1,0 +1,126 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family:'Times New Roman', Times, serif;
+    background-color: #a199c4b5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: #333;
+}
+
+.container {
+    background: linear-gradient(0deg, rgba(253,187,45,1) 0%, rgba(34,193,195,1) 87%);
+    border-radius: 1rem;
+    border: 1px solid rgba(0, 0, 0, 0.25);
+    width: fit-content;
+    padding: 1.75rem 1.5rem;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+h1 {
+    font-size: 30px;
+    margin-bottom: 20px;
+    color: #f7098c;
+}
+
+label {
+    font-size: 18px;
+    margin-bottom: 10px;
+    display: block;
+    color: #fcfcfc;
+}
+
+input[type="datetime-local"] {
+    padding: 8px;
+    font-size: 16px;
+    border: 1px solid #141414;
+    border-radius: 5px;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    border: 1px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    width: 100%;
+}
+
+/* Start Button Style */
+#start-btn {
+    background-color: #f6067e;
+    color: white;
+}
+
+#start-btn:hover {
+    background-color: #da3790;
+}
+
+/* Stop Button Style */
+#stop-btn {
+    background-color: #d53333;
+    color: white;
+    display: none;
+    /* Initially hidden */
+}
+
+#stop-btn:hover {
+    background-color: #fd0804;
+}
+
+/* Timer and Message Styles */
+#timer {
+    margin-top: 20px;
+    font-size: 18px;
+}
+
+#timer p {
+    margin: 10px 0;
+    font-size: 20px;
+}
+
+#message {
+    display: none;
+    margin-top: 20px;
+}
+
+#message h2 {
+    color: #9601fa;
+    font-size: 24px;
+}
+
+#message button {
+    background-color: #d72727;
+    color: white;
+    width: auto;
+}
+
+#message button:hover {
+    background-color: #fa0202;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    .container {
+        width: 80%;
+    }
+
+    button {
+        font-size: 14px;
+    }
+
+    #timer p {
+        font-size: 16px;
+    }
+}
